@@ -9,7 +9,7 @@ let time = 0;
 let timer;
 let lastHole = 0;
 let points = 0;
-let difficulty = "normal";
+let difficulty = "hard";
 let pokeballThrow = document.getElementById("pokeball-toss");
 let pokemonMusic = document.getElementById("pokemon-music");
 
@@ -261,7 +261,7 @@ function stopGame() {
 function startGame() {
   clearScore();
   setEventListeners();
-  setDuration(10);
+  setDuration(25);
   startTimer();
   pokemonMusic.play();
   showUp();
